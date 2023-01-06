@@ -1,0 +1,44 @@
+.home{
+    order: 2;
+    height: 100%;
+    width: 80%;
+    align-self: center;
+
+}
+.content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--bg-grey);
+    height: 65%;
+    border-radius: var(--border-radius);
+
+    padding: 1.5rem;
+}
+.content p{
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.075rem;
+}
+.content i{
+    position: absolute;
+    font-size: 10rem;
+    opacity: .1;
+    bottom: -2rem;
+    right: 1rem;
+}
+
+.title{
+    font-size: 1.1em;
+    letter-spacing: 0.25rem;
+    opacity: .55;
+    font-weight: 600;
+
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .home{
+        order: 3;
+    }
+}

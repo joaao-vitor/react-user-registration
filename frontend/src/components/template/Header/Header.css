@@ -1,0 +1,9 @@
+.header{
+    order: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 3.5rem 0;
+}

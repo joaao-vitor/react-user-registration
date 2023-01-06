@@ -1,0 +1,49 @@
+.menu{
+    position: fixed;
+    bottom: 3.5rem;
+    padding: 1rem 1rem;
+    box-shadow: var(--shadow);
+    border-radius: 38px;
+    width: 80%;
+    background-color: var(--bg-blue);
+    align-self: center;
+}
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+.menu ul span{
+    display: none;
+}
+.menu ul li{
+    font-size: 2rem;
+    display: inline;
+    text-decoration: none;
+}
+a{
+    color: var(--icon);
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.active{
+    color: var(--icon-active);
+}
+
+@media screen and (min-width: 768px) {
+    .menu{
+        margin-top: 3rem;
+        position: relative;
+        order: 2;
+    }
+    .menu ul a{
+        font-size: 0.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .menu ul span{
+        display: inline;
+    }
+}

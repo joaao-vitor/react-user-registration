@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+i {
+    pointer-events: none;
+}
+
+:root {
+    --bg-grey: #2F2F2F;
+    --bg-black: #131313;
+
+    --btn-blue: #33A1FD;
+    --btn-red: #FD3333;
+    --btn-yellow: #FF9A02;
+
+    --green: rgb(38, 161, 0);
+
+    --bg-blue: #0C131E;
+    --icon-active: #CCC9DC;
+    --icon: #324A5F;
+
+    --title-opaque: rgba(255, 255, 255, 0.55);
+
+    --shadow: 4px 4px 7px rgba(0, 0, 0, 0.25);
+
+    --border-radius: 1rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+.App {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #FFF;
+    background-color: var(--bg-black);
+}
+
+.grey-box {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-grey);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+}
+
+@media screen and (min-width: 1024px) {
+    .App {
+
+        margin: auto;
+        padding: 2rem;
+        border-radius: 3rem;
+        box-shadow: var(--shadow);
+        width: 1024px;
+        height: 90vh;
+        overflow-x: hidden;
+        overflow: scroll;
+    }
+
+    *::-webkit-scrollbar-track {
+        border-radius: 15px;
+        margin: 2.5rem;
+
+    }
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #616161 #1f1f1f;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 3px;
+}
+
+*::-webkit-scrollbar-track {
+    background: none;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #616161;
+    border-radius: 15px;
+    border: none;
+}
+*::-webkit-scrollbar-corner {
+    display: none;
+}
